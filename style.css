@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Space+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(226deg, 43%, 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "rubik";
+}
+.main-container {
+  display: flex;
+  min-width: calc(1200px + 6rem);
+  max-width: calc(1200px + 6rem);
+  height: calc(600px + 2rem);
+  color: white;
+}
+.main-container-profile {
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 1rem;
+  height: 100%;
+  width: 280px;
+  margin-right: 2rem;
+}
+.main-container-profile-topside {
+  background-color: hsl(246deg, 80%, 60%);
+  border-radius: 1rem;
+  padding: 1.2rem 1.8rem;
+  height: 70%;
+}
+.main-container-profile-topside-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 0.5rem 0 5rem;
+}
+.main-container-profile-topside-img img {
+  width: 100%;
+  height: auto;
+}
+.main-container-profile-topside-report {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.main-container-profile-topside-name {
+  font-size: 3rem;
+  font-weight: 300;
+  width: 70%;
+}
+.main-container-profile-choice {
+  padding: 1.5rem 1.8rem;
+}
+.main-container-profile-choice-selected {
+  color: hsl(236deg, 100%, 87%);
+  line-height: 2.8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.main-container-profile-choice-selected:hover {
+  cursor: pointer;
+  color: white;
+}
+.main-container-profile-choice .selected {
+  color: white;
+}
+.main-container-cards {
+  width: 75%;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-container-cards-card:nth-child(1) {
+  background-color: hsl(15deg, 100%, 70%);
+  background-image: url("images/icon-work.svg");
+}
+.main-container-cards-card:nth-child(2) {
+  background-color: hsl(195deg, 74%, 62%);
+  background-image: url("images/icon-play.svg");
+}
+.main-container-cards-card:nth-child(3) {
+  background-color: hsl(348deg, 100%, 68%);
+  background-image: url("images/icon-study.svg");
+}
+.main-container-cards-card:nth-child(4) {
+  background-color: hsl(145deg, 58%, 55%);
+  background-image: url("images/icon-exercise.svg");
+}
+.main-container-cards-card:nth-child(5) {
+  background-color: hsl(264deg, 64%, 52%);
+  background-image: url("images/icon-social.svg");
+}
+.main-container-cards-card:nth-child(6) {
+  background-color: hsl(43deg, 84%, 65%);
+  background-image: url("images/icon-self-care.svg");
+}
+.main-container-cards-card {
+  display: flex;
+  align-items: flex-end;
+  width: 300px;
+  height: 300px;
+  border-radius: 1rem;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  background-repeat: no-repeat;
+  background-position: 93% 0;
+}
+.main-container-cards-card-background {
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 1rem;
+  width: 100%;
+  height: 85%;
+  padding: 2rem;
+}
+.main-container-cards-card-background:hover {
+  cursor: pointer;
+  background-color: hsl(235deg, 45%, 61%);
+}
+.main-container-cards-card-background-content {
+  font-size: 1.2rem;
+  height: 100%;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-container-cards-card-background-content-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+.main-container-cards-card-background-content-title-dots {
+  transform: translateY(-25%);
+}
+.main-container-cards-card-background-content-title-dots:hover {
+  cursor: pointer;
+}
+.main-container-cards-card-background-content-hours {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+.main-container-cards-card-background-content-bottom {
+  font-size: 1rem;
+  color: hsl(236deg, 100%, 87%);
+}
+
+@media (max-width: 1023px) {
+  .main-container {
+    max-width: 95%;
+    min-width: 95%;
+    flex-direction: column;
+  }
+  .main-container-cards {
+    width: 100%;
+  }
+  .main-container-cardscard {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
